@@ -1,0 +1,42 @@
+body{
+  background-color: #74b49b;
+}
+.name{
+    background-color: rgb(68, 201, 68);
+    color: black;
+}
+
+.portafolio{
+    color: black;
+   
+}
+.table, th,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 100px;
+    color: black;
+}
+.calss{
+    color: black;
+    font-style: italic;
+  
+
+}
+.forma{
+    background-color: rgb(68, 201, 68);
+}
+legend{
+    background-color: greenyellow;
+    padding: 5px;
+    border-radius: 25px;
+}
+h1{
+    background-color: greenyellow;
+    padding: 5px;
+    border-radius: 25px;
+}
+img{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    float: right;
+}
