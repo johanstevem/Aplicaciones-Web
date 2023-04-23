@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operaciones Matematicas</title>
+<script type="text/javascript">
+    function suma(){
+        var Numero1 = Number(document.getElementById('Numero1').value);
+        var Numero2 = Number(document.getElementById('Numero2').value);
+        var resultado= Numero1 + Numero2
+
+        document.getElementById('resultado').value = resultado
+    }
+
+    function restar(){
+        var Numero1 = Number(document.getElementById('Numero1').value);
+        var Numero2 = Number(document.getElementById('Numero2').value);
+        var resultado= Numero1 - Numero2
+
+        document.getElementById('resultado').value = resultado
+    }
+
+    function multiplicar(){
+        var Numero1 = Number(document.getElementById('Numero1').value);
+        var Numero2 = Number(document.getElementById('Numero2').value);
+        var resultado= Numero1 * Numero2
+
+        document.getElementById('resultado').value = resultado
+    }
+
+    function dividir(){
+        var Numero1 = Number(document.getElementById('Numero1').value);
+        var Numero2 = Number(document.getElementById('Numero2').value);
+        var resultado= Numero1 / Numero2
+
+        document.getElementById('resultado').value = resultado
+    }
+
+    function mod(){
+        var Numero1 = Number(document.getElementById('Numero1').value);
+        var Numero2 = Number(document.getElementById('Numero2').value);
+        var resultado= Numero1 % Numero2
+
+        document.getElementById('resultado').value = resultado
+    }
+</script>
+</head>
+<body>
+    Numero1 <input type="text" id="Numero1"> <br><br>
+    Numero2 <input type="text" id="Numero2"> <br><br>
+    Resultado <input type="text" id="resultado"> <br>
+
+    <input type="button" value="sumar" onclick="suma()">
+    <input type="button" value="Restar" onclick="restar()">
+    <input type="button" value="Multiplicar" onclick="multiplicar()">
+    <input type="button" value="Dividir" onclick="dividir()">
+    <input type="button" value="MOD" onclick="mod()">
+</body>
+
+</html>
