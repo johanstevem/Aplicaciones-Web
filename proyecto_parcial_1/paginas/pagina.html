@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inicio de sesion</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="stilo.css">
+    <script src="index.js" defer></script>
+  </head>  
+  <body>
+    <h2>       
+      <ul>
+ <li><a style="color: azure;" href="../index.html">Pagina principal</a> </li>
+ <br>
+ <li><a style="color: azure;" href="index.html">Iniciar sesion/Registrarse</a> </li>
+ <br>
+ <li><a style="color: azure;" href="quienes.html">¿Quienes somos?</a> </li>
+</ul>
+    <form action="#" method="post">
+      
+      <h1>Inicio de sesion</h1>
+
+      <section>        
+        <label for="email">Correo electronico</label>
+        <input id="email" name="email" type="email" placeholder=" " autocomplete="username" required>
+      </section>
+                        
+      <section>        
+        <label for="current-password">Contraseña</label>
+        <input id="current-password" name="current-password" type="password" autocomplete="current-password" aria-describedby="password-constraints" required>
+        <button id="toggle-password" type="button" aria-label="Show password as plain text. Warning: this will display your password on the screen."></button>
+        <div id="password-constraints">Ocho o más caracteres, con al menos una letra minúscula y una mayúscula.</div>
+      </section>
+
+      <button id="signin">Ingresar</button>
+      
+    </form>
+
+  </body>
+</html>
