@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos>
+  <persona>
+    <titulo>Introducción a la biología molecular</titulo>
+    <autor>James D. Watson</autor>
+    <editorial>Alianza Editorial</editorial>
+    <año>2018</año>
+    <isbn>978-84-9181-998-8</isbn>
+    <tema>Biología molecular</tema>
+  </persona>
+  <persona>
+    <titulo>Física para la ciencia y la tecnología</titulo>
+    <autor>Paul A. Tipler</autor>
+    <editorial>Reverté</editorial>
+    <año>2017</año>
+    <isbn>978-84-291-3081-6</isbn>
+    <tema>Física</tema>
+  </persona>
+  <persona>
+    <titulo>Química orgánica</titulo>
+    <autor>T. W. Graham Solomons</autor>
+    <editorial>Wiley</editorial>
+    <año>2019</año>
+    <isbn>978-84-16691-68-7</isbn>
+    <tema>Química orgánica</tema>
+  </persona>
+</datos>

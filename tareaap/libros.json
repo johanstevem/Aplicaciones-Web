@@ -1,0 +1,26 @@
+[
+    {
+      "titulo": "El origen de las especies",
+      "autor": "Charles Darwin",
+      "editorial": "John Murray",
+      "anio": 1859
+    },
+    {
+      "titulo": "Principia Mathematica",
+      "autor": "Isaac Newton",
+      "editorial": "J. & R. Tonson",
+      "anio": 1687
+    },
+    {
+      "titulo": "El gran diseño",
+      "autor": "Stephen Hawking",
+      "editorial": "Bantam Books",
+      "anio": 2010
+    },
+    {
+      "titulo": "La estructura de las revoluciones científicas",
+      "autor": "Thomas Kuhn",
+      "editorial": "University of Chicago Press",
+      "anio": 1962
+    }
+  ]

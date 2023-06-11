@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lectura de archivo XML</title>
+</head>
+<body>
+  <h1>Libros cientificos</h1>
+  <button onclick="mostrarDatos()">Mostrar datos</button>
+  <div id="datos-personas"></div>
+
+  <script>
+    function mostrarDatos() {
+     
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+          var xmlDoc = this.responseXML;
+          var personas = xmlDoc.getElementsByTagName("persona");
+
+    
+          var datos = document.getElementById("datos-personas");
+          datos.innerHTML = "";
+          for (var i = 0; i < personas.length; i++) {
+            var titulo = personas[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
+            var autor = personas[i].getElementsByTagName("autor")[0].childNodes[0].nodeValue;
+            var editorial = personas[i].getElementsByTagName("editorial")[0].childNodes[0].nodeValue;
+            var años= personas[i].getElementsByTagName("año")[0].childNodes[0].nodeValue;
+            var isbn= personas[i].getElementsByTagName("isbn")[0].childNodes[0].nodeValue;
+            var tema= personas[i].getElementsByTagName("tema")[0].childNodes[0].nodeValue;
+            datos.innerHTML += titulo + "-- autor del trabajo:(" + autor + ") editorial " + editorial + año+ isbn+ tema+ "<br>";
+          }
+        }
+      };
+      xhttp.open("GET", "libro.xml", true);
+      xhttp.send();
+    }
+  </script>
+</body>
+</html>
